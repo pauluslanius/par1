@@ -1,0 +1,18 @@
+body {background-image: url(is.jpg);
+      background-repeat: no-repeat;
+}
+p.ctr {
+     text-align:center;
+}
+p.rght {
+     text-align:right;
+}
+
+.red {
+    text-align:center;
+    color:red;
+}
+#grn {
+    text-align:left;
+    color:green;
+}

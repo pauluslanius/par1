@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Паровозы. Главная страница</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="description" content="Всякая фигня про паровозы">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+ td {
+  border: 1px solid;
+  background-color: lightblue;
+  text-align:left;
+}
+ th {
+  border: 2px solid;
+  background-color: green;    
+}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+header {
+     background-image: url("images/c2.jpg");
+     background-size: 100% 100%;
+     padding:30px;
+     text-align:center;
+}
+
+
+
+.aside ul {
+  list-style-type: none;
+  background-color: lightblue;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+}
+.aside li {
+  margin-bottom: 5px;
+  background-color:#455a64;
+  border:1px solid green;
+}
+
+.aside li:hover {
+  background-color: #607d8b;
+}
+
+
+footer {
+     background-image: url("images/b1.jpg");
+     background-size: 100% cover;
+     background-position: center;
+     padding:10px;
+}
+
+
+
+
+
+.container {
+   maxwidth:1200px;
+   margin: 0 auto;
+}
+.footer__wrapper{
+   height:100px;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+}
+.footer__block{
+   width:15%;
+}
+.footer__logo {
+    display: inline-block;
+}
+.nav{
+   display: flex;
+
+
+}
+.nav__link{
+   margin-right: 15px;
+   color: green;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 600;
+   position:relative;
+}
+.nav__link:after{
+   width:100%;
+   height: 2px;
+   background-color:green;
+   position:absolute;
+   top:100%;
+   left: 0;
+   content:"";
+   opacity: 0;
+   transition:opacity 0.2s;
+}
+
+
+.nav__link:last-child{
+     margin-right: 0px;
+}
+
+.nav__link.active:after{
+   opacity: 1;
+}
+.nav__link:hover:after{
+   opacity: 0.5;
+}
+
+.footer__lng{
+   display: flex;
+   justify-content: flex-end;
+}
+.footer__lng-link{
+    color:#b7b7b7;
+    margin-right:8px;
+    text-transform:uppercase;
+    text-decoration: none;
+
+}
+.footer__lng-link:last-child{
+    margin-right:0px;
+}
+.footer__lng-link.active{
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+.button {
+  background-color:green;
+  border:1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 90%;
+}
+.button:hover {
+  background-color: #3e8e41;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 820px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+
+
+
+      .body1 {
+        padding: 0;
+        margin: 0;
+        font-family: verdana, arial, sans-serif;
+      }
+
+      .body1 {
+        display: flex;
+        padding: 1em;
+        flex-direction: column;
+        
+      }
+
+      .item {
+        /*flex-basis: 50%;*/
+        background-color: #455a64;
+        color: #fff;
+        font-size: 1.1em;
+        padding: 1em;
+      }
+
+      .item:nth-child(even) {
+        background-color: #607d8b;
+      }
+      @media screen and (min-width: 768px) {
+        .body1 {
+          flex-direction: row;
+        }  
+
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+  <div class="footer__wrapper">
+    <div class="footer__block">
+       <a href="parovoz.html" class="footer__logo"> <img src="images/back1.png" style="width:180px;"> </a>
+    </div>
+    <nav class="nav">
+       <a href="parovoz.html" class="nav__link active"> Главная </a>
+       <a href="/" class="nav__link"> О сайте </a>
+       <a href="/" class="nav__link"> Контакты </a>
+       
+    </nav>
+    <div class="footer__block">
+       <div class="footer__lng">
+        <a href="parovoz.html" class="footer__lng-link active">рус</a>
+        <a href="/" class="footer__lng-link" >eng</a>
+       
+
+       </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+<div class="row">
+  
+<div class="col-3">
+    <div class="aside">
+    <ul>
+      <li><a href="su1.html"> <p style=font-size:17px;color:white;>С<sup>у</sup>. Первый выпуск</p> </a></li>
+      <li><a href="su2.html"> <p style=font-size:17px;color:white;>С<sup>у</sup>. Второй выпуск</p> </a></li>      
+      <li><a href="su3.html"> <p style=font-size:17px;color:white;>С<sup>у</sup>. Третий выпуск</p> </a></li>
+      <li><a href="su4.html"> <p style=font-size:17px;color:white;>С<sup>у</sup>. Четвертый выпуск</p> </a></li>
+      
+      <li><a href="e1.html"> <p style=font-size:17px;color:white;>Э</p> </a></li>
+      <li><a href="e2.html"> <p style=font-size:17px;color:white;>Э<sup>у</sup></p> </a></li>      
+      <li><a href="e3.html"> <p style=font-size:17px;color:white;>Э<sup>м</sup></p> </a></li>
+      <li><a href="e4.html"> <p style=font-size:17px;color:white;>Э<sup>р</sup></p> </a></li>
+      
+      <li><a href="is1.html"> <p style=font-size:17px;color:white;>ИС20 2П</p> </a></li>
+      <li><a href="is2.html"> <p style=font-size:17px;color:white;>ИС20 10П</p> </a></li>      
+      <li><a href="is3.html"> <p style=font-size:17px;color:white;>ИС21</p> </a></li>
+
+      <li><a href="qviz.html"> <p style=font-size:17px;color:white;>Вопросы</p> </a></li>
+      <li><a href="cut.html"> <p style=font-size:17px;color:white;>Отсечка</p> </a></li>
+      <li><a href="fact.html"> <p style=font-size:17px;color:white;>Факты</p> </a></li>    
+    </ul>
+    </div>
+  </div>
+
+
+
+  <div class="col-9">
+
+
+<h1 style="text-align:center; font-size: 200%;" >Паровозы. Каталог</h1>
+
+<div class="body1">
+    <div class="item">
+       <p>
+        <a href="su1.html"> <img src="images/su1a.gif" width=300px alt="картинка Су 1 вып">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>С<sup>у</sup> 1го выпуска</h2>
+      <p>
+        Вариант с медной топкой и дышлами Гласса. С целью увеличения КПД часть паровозов имела водо&shy;подогреватель смешения.
+      </p>
+    </div>
+  </div>
+
+<div class="body1">
+    <div class="item">
+      <p>
+        <a href="su2.html"> <img src="images/su2a.jpg" width=300px alt="картинка Су 2 вып">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>С<sup>у</sup> 2го выпуска</h2>
+      <p>
+        Вариант с железной топкой, увеличиным диаметром барабанной части котла и постепенным внедрением сварки.
+      </p>
+    </div>
+  </div>
+
+
+<div class="body1">
+    <div class="item">
+       <p>
+        <a href="su3.html"> <img src="images/su3a.jpg" width=300px alt="картинка Су 3 вып">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>С<sup>у</sup> 3го выпуска</h2>
+      <p>
+        Вариант с увеличенными шейками движущих осей. Широкое внедрение сварки. Поздние выпуски имели вентиляторную тягу.
+      </p>
+    </div>
+  </div>
+
+<div class="body1">
+    <div class="item">
+      <p>
+        <a href="su4.html"> <img src="images/su4a.jpg" width=300px alt="картинка Су 4 вып">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>С<sup>у</sup> 4го выпуска</h2>
+      <p>
+        Послевоенный выпуск. Цельносварной котел. Измененное парорас&shy;пределение.
+      </p>
+    </div>
+  </div>
+
+
+
+<div class="body1">
+    <div class="item">
+       <p>
+        <a href="e1.html"> <img src="images/e1a.jpg" width=300px alt="картинка Э дорев.">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>Э</h2>
+      <p>
+        Дореволюц&shy;ионный выпуск. После окончания гражданской войны выпускались заводами Германии и Швеции.
+      </p>
+    </div>
+  </div>
+
+<div class="body1">
+    <div class="item">
+      <p>
+        <a href="e2.html"> <img src="images/e2a.jpg" width=300px alt="картинка Эу">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>Э<sup>у</sup></h2>
+      <p>
+        Медная топка, усиленный паро&shy;перегрев, на ряде машин установлен питательный колпак.
+      </p>
+    </div>
+  </div>
+
+
+<div class="body1">
+    <div class="item">
+       <p>
+        <a href="e3.html"> <img src="images/e3a.jpg" width=300px alt="картинка Эм">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>Э<sup>м</sup> 3го выпуска</h2>
+      <p>
+        Вариант с железной топкой, на ряде машин установлен питательный колпак. В ходе выпуска широко внедряется сварка.
+      </p>
+    </div>
+  </div>
+
+<div class="body1">
+    <div class="item">
+      <p>
+        <a href="e4.html"> <img src="images/e4a.jpg" width=300px alt="картинка Эр">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>Э<sup>р</sup></h2>
+      <p>
+        Железная топка, несколько увеличена площадь колосниковой решетки. Цельносварной котел.
+      </p>
+    </div>
+  </div>
+
+<div class="body1">
+    <div class="item">
+      <p>
+        <a href="is1.html"> <img src="images/is1a.jpg" width=300px alt="картинка 2П">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>ИС20 2П</h2>
+      <p>
+        Установочная партия пассажирских паровозов собранная на Коломенском заводе.
+      </p>
+    </div>
+  </div>
+
+
+<div class="body1">
+    <div class="item">
+       <p>
+        <a href="is2.html"> <img src="images/is2a.jpg" width=300px alt="картинка 10П">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>ИС20 10П</h2>
+      <p>
+        Серийное производство по пере<wbr>смотренным чертежам на Луганском паровозо&shy;строительном заводе.
+      </p>
+    </div>
+  </div>
+
+<div class="body1">
+    <div class="item">
+      <p>
+        <a href="is3.html"> <img src="images/is3a.jpg" width=300px alt="картинка ИС21">  </a>
+      </p>
+    </div>
+
+    <div class="item">
+      <h2>ИС21</h2>
+      <p>
+        вариант с цельносварным котлом и паро&shy;перегревателем Л40 близким к системе Чусова.
+      </p>
+    </div>
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+<footer>
+
+<div class="container">
+  <div class="footer__wrapper">
+    <div class="footer__block">
+       <a href="parovoz.html" class="footer__logo"> <img src="images/back1.png" style="width:180px;"> </a>
+    </div>
+    <nav class="nav">
+       <a href="parovoz.html" class="nav__link active"> Главная </a>
+       <a href="/" class="nav__link"> О сайте </a>
+       <a href="/" class="nav__link"> Контакты </a>
+       
+    </nav>
+    <div class="footer__block">
+       <div class="footer__lng">
+        <a href="parovoz.html" class="footer__lng-link active">рус</a>
+        <a href="/" class="footer__lng-link" >eng</a>
+       
+
+       </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+</footer>
+
+</body>
+</html>
+
+
