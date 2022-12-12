@@ -41,6 +41,7 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  border-radius: 25px;
 }
 
 .menu li {
@@ -48,10 +49,12 @@ header {
   margin-bottom: 3px;
   background-color:#3e9e41;
   border:1px solid green;
+  border-radius: 15px;
 }
 
 .menu li:hover {
   background-color: #3e8e22;
+  border-radius: 15px;
 }
 
 .aside ul {
@@ -60,15 +63,18 @@ header {
   padding: 15px;
   text-align: center;
   margin: 0;
+  border-radius: 25px;
 }
 .aside li {
   margin-bottom: 5px;
   background-color:green;
   border:2px solid green;
+  border-radius: 15px;
 }
 
 .aside li:hover {
   background-color: #3e8e41;
+  border-radius: 15px;
 }
 
 
