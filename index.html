@@ -8,8 +8,13 @@
 <meta name="description" content="Всякая фигня про паровозы">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <style>
+
+
+
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -24,6 +29,7 @@ body {
 }
 * {
   box-sizing: border-box;
+  
 }
 
 .row::after {
@@ -65,15 +71,51 @@ header {
 
 
 footer {
-     background-image: url("images/b1.jpg");
-     background-size: 100% cover;
-     background-position: center;
-     padding:10px;
+ width: 100vw;
+ height: 230px;
+ background-image: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+ background-blend-mode: screen;
+
+
+/* linear-gradient(to top, #30cfd0 0%, #330867 100%);  */
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: absolute;
+
+}
+
+/* Track */
+.track {
+ background-image: url(images/img_02.png);
+ background-repeat: repeat-x;
+ position: absolute;
+ bottom: 0px;
+ width: 1000vw;
+ right:1px;
+ height: 150px;
+ animation: trackanimation 60s linear infinite;
+}
+
+/* Car */
+.car {
+ background-image: url(images/a1.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 17rem;
+ height: 6.699rem;
+ position: absolute;
+ bottom: 56px;
+ left: 396px;
 }
 
 
 
-
+/* Moving the track backwards */
+@keyframes trackanimation {
+ 100% {
+ transform: translate(500vw);
+ }
+}
 
 .container {
    maxwidth:1200px;
@@ -482,32 +524,8 @@ a:link {
 
 <footer>
 
-<div class="container">
-  <div class="footer__wrapper">
-    <div class="footer__block">
-       <a href="parovoz.html" class="footer__logo"> <img src="images/back1.png" style="width:180px;"> </a>
-    </div>
-    <nav class="nav">
-       <a href="parovoz.html" class="nav__link active"> Главная </a>
-       <a href="/" class="nav__link"> О сайте </a>
-       <a href="/" class="nav__link"> Контакты </a>
-       
-    </nav>
-    <div class="footer__block">
-       <div class="footer__lng">
-        <a href="parovoz.html" class="footer__lng-link active">рус</a>
-        <a href="/" class="footer__lng-link" >eng</a>
-       
-
-       </div>
-    </div>
-
-
-  </div>
-
-</div>
-
-
+<div class="track"></div>
+        <div class="car"></div>
 
 
 
