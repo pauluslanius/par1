@@ -34,7 +34,7 @@ header {
      background-image: url("images/c2.jpg");
      background-size: 100% 100%;
      padding:30px;
-    
+    border-radius: 20px;
 }
 
 .menu ul {
@@ -50,6 +50,7 @@ header {
   background-color:#3e9e41;
   border:1px solid green;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .menu li:hover {
@@ -70,6 +71,7 @@ header {
   background-color:green;
   border:2px solid green;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .aside li:hover {
@@ -202,6 +204,7 @@ footer {
   margin: 4px 2px;
   cursor: pointer;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .button:hover {
   background-color: #3e8e41;
