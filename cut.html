@@ -122,7 +122,7 @@ input {
 <p>Именно отсечка и отвечает за характерное "Чуханье" паровоза. Чем чаще происходит отсечка - тем чаще звучит "чух".</p>
 <p>Ниже можно расчитать как часто будет "чухать" паровоз в зависимости от скорости его движения:</p>
 <hr>
-<form>
+
 <div class="body1">
     <div class="item">
        <p style="font-size:120%; color:green;">Диаметр ведущего колеса в см</p>
@@ -149,7 +149,7 @@ input {
     </div>
 
     <div class="item1">
-      <input type="number" class="input-in3"  inrange min = "0" max ="300" required required>
+      <input type="number" class="input-in3"  inrange min = "0" max ="300" required>
     </div>
   </div>
 
@@ -162,7 +162,6 @@ input {
       <textarea id="TextOutput" rows="1" cols="20" readonly>…</textarea>
     </div>
   </div>
-</form>
 
 
 <hr>
@@ -181,12 +180,12 @@ button.onclick = function() {
 let xx=inputIn1.value;
 let yy=inputIn2.value;
 let zz=inputIn3.value;
-xx=+xx
-yy=+yy
-zz=+zz
+xx=+xx;
+yy=+yy;
+zz=+zz;
 
-zz=(zz/3.6)*100
-xx=xx*3.14
+zz=(zz/3.6)*100;
+xx=xx*3.14;
 TextOutput.value = ((zz/xx)*yy*2);
 } 
 
